@@ -12,6 +12,9 @@
 		AE94BB0B2892DDFA008F76A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */; };
 		AE94BB0E2892DDFA008F76A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB0D2892DDFA008F76A1 /* Preview Assets.xcassets */; };
 		AE94BB152892DE27008F76A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB142892DE27008F76A1 /* Model.swift */; };
+		AE94BB172892E233008F76A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB162892E233008F76A1 /* ViewModel.swift */; };
+		AE94BB1A2892ECF5008F76A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB1C2892ECF5008F76A1 /* Localizable.strings */; };
+		AE94BB1F2892F1CB008F76A1 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE94BB0D2892DDFA008F76A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE94BB142892DE27008F76A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AE94BB162892E233008F76A1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AE94BB1B2892ECF5008F76A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE94BB1D2892ECF7008F76A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 		AE94BAFA2892DDF8008F76A1 = {
 			isa = PBXGroup;
 			children = (
+				AE94BB1C2892ECF5008F76A1 /* Localizable.strings */,
 				AE94BB052892DDF8008F76A1 /* Ios-coding-challenge-Aaron */,
 				AE94BB042892DDF8008F76A1 /* Products */,
 			);
@@ -55,6 +63,8 @@
 			children = (
 				AE94BB062892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift */,
 				AE94BB082892DDF8008F76A1 /* ContentView.swift */,
+				AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */,
+				AE94BB162892E233008F76A1 /* ViewModel.swift */,
 				AE94BB142892DE27008F76A1 /* Model.swift */,
 				AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */,
 				AE94BB0C2892DDFA008F76A1 /* Preview Content */,
@@ -112,6 +122,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = AE94BAFA2892DDF8008F76A1;
 			productRefGroup = AE94BB042892DDF8008F76A1 /* Products */;
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE94BB0E2892DDFA008F76A1 /* Preview Assets.xcassets in Resources */,
+				AE94BB1A2892ECF5008F76A1 /* Localizable.strings in Resources */,
 				AE94BB0B2892DDFA008F76A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,11 +154,25 @@
 			files = (
 				AE94BB152892DE27008F76A1 /* Model.swift in Sources */,
 				AE94BB092892DDF8008F76A1 /* ContentView.swift in Sources */,
+				AE94BB172892E233008F76A1 /* ViewModel.swift in Sources */,
 				AE94BB072892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift in Sources */,
+				AE94BB1F2892F1CB008F76A1 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE94BB1C2892ECF5008F76A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE94BB1B2892ECF5008F76A1 /* en */,
+				AE94BB1D2892ECF7008F76A1 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE94BB0F2892DDFA008F76A1 /* Debug */ = {
