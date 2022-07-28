@@ -11,6 +11,7 @@
 		AE94BB092892DDF8008F76A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB082892DDF8008F76A1 /* ContentView.swift */; };
 		AE94BB0B2892DDFA008F76A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */; };
 		AE94BB0E2892DDFA008F76A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB0D2892DDFA008F76A1 /* Preview Assets.xcassets */; };
+		AE94BB152892DE27008F76A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB142892DE27008F76A1 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AE94BB082892DDF8008F76A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE94BB0D2892DDFA008F76A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE94BB142892DE27008F76A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AE94BB062892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift */,
 				AE94BB082892DDF8008F76A1 /* ContentView.swift */,
+				AE94BB142892DE27008F76A1 /* Model.swift */,
 				AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */,
 				AE94BB0C2892DDFA008F76A1 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE94BB152892DE27008F76A1 /* Model.swift in Sources */,
 				AE94BB092892DDF8008F76A1 /* ContentView.swift in Sources */,
 				AE94BB072892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift in Sources */,
 			);
