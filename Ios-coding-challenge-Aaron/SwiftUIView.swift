@@ -9,37 +9,44 @@ import SwiftUI
 
 struct SwiftUIView: View {
     @StateObject var viewModel = ViewModel()
+    
+    
     var body: some View {
         NavigationView {
            
             List{
-                
+               
+                ForEach(viewModel.userz, id: \.self){userz in
                 VStack {
-                    navigationTitle("userz.first_name")
+                    navigationTitle(userz.first_name!)
                     HStack{
-//userz. are placeholders because I forgot
-// the correct way to call from json :/
-                    Text("UserID:")
-                    Text("userz.id")
+                        Text("UserID:")
+                        let id = (String(userz.id))
+                        Text(String(id))
                     }
                     HStack{
                     Text("Group Name")
-                    Text("userz.group")
+                        Text(userz.group_name)
                     }
                     HStack{
                     Text("Designation:")
-                
-                    Text("userz.designation")
-                    }
+                      Text(userz.designation!)
+                    }.buttonStyle(PlainButtonStyle())
                     
             }
             }
         }
+            .navigationTitle("users account")
+            .onAppear(){
+                viewModel.fetchData()
+            }
     }
 }
-
+    }
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUIView()
     }
 }
+
+

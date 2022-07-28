@@ -9,40 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
+   
+   
     var body: some View {
         NavigationView{
-            
             List{
-               
-                VStack{
-                   /* ForEach(userz, in Userz){_userz in
-                    */
-                    navigationTitle(
-                    Text("USER APPLICATION")
-                    )
-                    HStack{
-                    Text("UserID:")
-                    Text("Int(viewModel.userz.id)")
+                ForEach(viewModel.userz, id: \.self){ users in
+                        VStack{
+                           
+                            Text("UserID:" + String(users.id))
+                        HStack{
+                          
+                            Text("Name:")
+                            Text(users.first_name ?? "Name")
+                        }
+                        HStack{
+                           
+                            Text("email:")
+                                .padding(10)
+                          Text(users.email)
+                            }.buttonStyle(PlainButtonStyle())
                     }
-                    HStack{
-                    Text("Name:")
-                    Text("userz.first_name")
-                    }
-                    HStack{
-                    Text("email:")
-                    Text("userz.first_name")
-                    }
-                    }
-                    
-                }
+                
+            }
         }
-    }
+    
+            .navigationTitle("USER APPLICATION")
+            .onAppear(){
+                viewModel.fetchData()
+            }
 }
-
+    }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
+    
 }
 }
-
+}
