@@ -27,6 +27,7 @@ struct Userz: Codable, Hashable {
     var designation: String?
     
 }
+
 enum CodingKeys: String, CodingKey {
     case id = "id"
     case first_name, email

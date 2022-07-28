@@ -27,8 +27,11 @@ struct ContentView: View {
                            
                             Text("email:")
                                 .padding(10)
-                          Text(users.email)
+                            NavigationLink(destination: SwiftUIView()) {
+                                Text(users.email)
                             }.buttonStyle(PlainButtonStyle())
+                        }
+                        }
                     }
                 
             }
@@ -46,4 +49,4 @@ struct ContentView_Previews: PreviewProvider {
     
 }
 }
-}
+
