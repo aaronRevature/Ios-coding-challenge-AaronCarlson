@@ -15,6 +15,7 @@
 		AE94BB172892E233008F76A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB162892E233008F76A1 /* ViewModel.swift */; };
 		AE94BB1A2892ECF5008F76A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE94BB1C2892ECF5008F76A1 /* Localizable.strings */; };
 		AE94BB1F2892F1CB008F76A1 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */; };
+		AE94BB212893908A008F76A1 /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BB202893908A008F76A1 /* SwiftUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE94BB1B2892ECF5008F76A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE94BB1D2892ECF7008F76A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		AE94BB202893908A008F76A1 /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				AE94BB062892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift */,
 				AE94BB082892DDF8008F76A1 /* ContentView.swift */,
 				AE94BB1E2892F1CB008F76A1 /* SwiftUIView.swift */,
+				AE94BB202893908A008F76A1 /* SwiftUIViewModel.swift */,
 				AE94BB162892E233008F76A1 /* ViewModel.swift */,
 				AE94BB142892DE27008F76A1 /* Model.swift */,
 				AE94BB0A2892DDFA008F76A1 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			files = (
 				AE94BB152892DE27008F76A1 /* Model.swift in Sources */,
 				AE94BB092892DDF8008F76A1 /* ContentView.swift in Sources */,
+				AE94BB212893908A008F76A1 /* SwiftUIViewModel.swift in Sources */,
 				AE94BB172892E233008F76A1 /* ViewModel.swift in Sources */,
 				AE94BB072892DDF8008F76A1 /* Ios_coding_challenge_AaronApp.swift in Sources */,
 				AE94BB1F2892F1CB008F76A1 /* SwiftUIView.swift in Sources */,

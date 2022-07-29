@@ -8,41 +8,38 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    @StateObject var viewModel = ViewModel()
+    var viewModel = ViewModel()
+    var users = [Userz]()
+    var first_name = ""
+    var last_name = ""
     
     
     var body: some View {
         NavigationView {
-           
-            List{
-               
-                ForEach(viewModel.userz, id: \.self){userz in
+           List{
+               ForEach(viewModel.userz, id: \.self){users in
                 VStack {
-                    navigationTitle(userz.first_name!)
-                    HStack{
-                        Text("UserID:")
-                        let id = (String(userz.id))
-                        Text(String(id))
-                    }
+                   Text("user")
                     HStack{
                     Text("Group Name")
-                        Text(userz.group_name)
+                        Text(users.group_name)
                     }
                     HStack{
                     Text("Designation:")
-                      Text(userz.designation!)
+                      Text(users.designation!)
                     }.buttonStyle(PlainButtonStyle())
                     
-            }
+                   }
+                }
             }
         }
-            .navigationTitle("users account")
+            .navigationTitle(first_name + last_name)
             .onAppear(){
                 viewModel.fetchData()
+                
             }
     }
 }
-    }
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUIView()
