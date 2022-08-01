@@ -22,15 +22,20 @@ class ViewModel: ObservableObject {
             do {
                 let result = try JSONDecoder().decode([Userz].self, from: data)
                 DispatchQueue.main.async {
-                    self?.userz = result.sorted{ $0.id < $1.id}
+                    
+                    self?.userz = result.sorted{ $1.id > $0.id}
                 }
             } catch {
-                //Print out proper errors for easy debugging:
+              
                 print("errors trying to decode", error)
             }
         }
-        //using task varible so .resume() makes more sense
+       
         tasks.resume()
         }
-        }
+    
+ 
+      
+    }
+            
 

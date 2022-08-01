@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    var viewModel = ViewModel()
-    var users = [Userz]()
-    var first_name = ""
+    @StateObject var viewModel = ViewModel()
     var last_name = ""
     
     
@@ -19,26 +17,35 @@ struct SwiftUIView: View {
            List{
                ForEach(viewModel.userz, id: \.self){users in
                 VStack {
-                   Text("user")
+                    Text(String(users.id))
+                    Text("First Name")
+                    Text(users.first_name ?? "name")
+                    Text("Last Name")
+                    Text(users.last_name)
+                    
                     HStack{
-                    Text("Group Name")
+                        Text("Group Name")
                         Text(users.group_name)
+                      
                     }
                     HStack{
                     Text("Designation:")
-                      Text(users.designation!)
+                        Text(users.designation ?? "des")
                     }.buttonStyle(PlainButtonStyle())
                     
                    }
                 }
             }
         }
-            .navigationTitle(first_name + last_name)
-            .onAppear(){
-                viewModel.fetchData()
+        .navigationTitle("Name:" + last_name)
+        .onAppear(){
+            viewModel.fetchData()
+        }
+            
+                   
                 
             }
-    }
+    
 }
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {

@@ -8,10 +8,11 @@
 import SwiftUI
 
 class SwiftUIViewModel: ObservableObject {
-    @Published var first_name: String = ""
-    @Published var last_name: String = ""
-    @Published var group_name: String = ""
-    @Published var designation: String = ""
+    
+    @Published var first_name: String = "first_name"
+    @Published var last_name: String = "last_name"
+    @Published var group_name: String = "group_name"
+    @Published var designation: String = "designation"
     
     
 }

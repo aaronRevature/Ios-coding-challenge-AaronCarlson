@@ -15,21 +15,31 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(viewModel.userz, id: \.self){ users in
+                    
                         VStack{
                            
-                            Text("UserID:" + String(users.id))
-                        HStack{
                           
-                            Text("Name:")
-                            Text(users.first_name ?? "Name")
-                        }
-                        HStack{
-                           
-                            Text("email:")
-                                .padding(10)
+                               
                             NavigationLink(destination: SwiftUIView()) {
-                                Text(users.email)
-                            }.buttonStyle(PlainButtonStyle())
+                                
+                                VStack{
+                                   
+                                    Text("UserID:" + String(users.id))
+                                    HStack{
+                                        Text("Name:")
+                                         Text(users.first_name ?? "Name")
+                                        .padding(5)
+                                    }
+                            
+                                .padding(20)
+                                HStack{
+                                    VStack{
+                                    Text("Email:")
+                                       
+                                    Text(users.email)
+                                    }
+                                }
+                                }.buttonStyle(PlainButtonStyle())
                         }
                         }
                     }

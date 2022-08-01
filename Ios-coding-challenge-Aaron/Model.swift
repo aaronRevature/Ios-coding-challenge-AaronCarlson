@@ -19,17 +19,20 @@ import Foundation
 
 struct Userz: Codable, Hashable {
    
-    var id: Int
-    var email: String
-    var first_name: String?
-    var last_name: String
-    var group_name: String
-    var designation: String?
+    let id: Int
+    let email: String
+    let first_name: String?
+    let last_name: String
+    let group_name: String
+    let designation: String?
     
 }
 
 enum CodingKeys: String, CodingKey {
     case id = "id"
-    case first_name, email
-    case group_name, designation
+    case first_name = "first_name"
+    case email = "email"
+    case last_name = "last_name"
+    case group_name = "group_name"
+    case designation = "designation"
 }
